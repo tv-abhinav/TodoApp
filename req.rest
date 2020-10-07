@@ -1,0 +1,24 @@
+GET http://localhost:5000/subscriber
+
+###
+
+POST http://localhost:3000/subscriber HTTP/1.1
+content-type: application/json
+
+{
+    "subject":"Upcoming",
+    "noteText":"Learning React"
+}
+
+###
+
+PATCH http://localhost:3000/subscriber/Upcoming HTTP/1.1
+content-type: application/json
+
+{
+    "noteText":"Complete App"
+}
+
+###
+
+DELETE http://localhost:3000/subscriber/Upcoming
